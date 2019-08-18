@@ -1,11 +1,5 @@
-module GenieOnHeroku
-
 using Genie
 using Genie.Router
-
-function greet()
-    print("Hello World!")
-end
 
 function launchServer(port)
 
@@ -14,6 +8,7 @@ function launchServer(port)
     Genie.config.server_port = port
 
     println("port set to $(port)")
+
     route("/") do
         "Hi there!"
     end
@@ -21,4 +16,5 @@ function launchServer(port)
     Genie.AppServer.startup()
 end
 
-end # module
+launchServer(parse(Int, ARGS[1]))
+
