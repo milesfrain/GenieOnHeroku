@@ -13,3 +13,7 @@ heroku logs -tail -a $HEROKU_APP_NAME
 ```
 
 I was previously attempting to host on heroku by uploading docker containers, but encountered lots of issues. Moved that troubleshooting effort to a [separate branch](https://github.com/milesfrain/GenieOnHeroku/tree/dockerfile) in this repo.
+
+### GUI Guide (no terminal)
+
+Here's a [guide](https://gist.github.com/fonsp/38965d7595a5d1060e27d6ca2084778d) on how to deploy to Heroku without any of the above CLI commands. Thanks to [@fonsp](https://github.com/fonsp) for the writeup.
